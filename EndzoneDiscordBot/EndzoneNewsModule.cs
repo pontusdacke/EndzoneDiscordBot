@@ -55,7 +55,7 @@ namespace EndzoneDiscordBot
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Något gick fel med nyhetskollen. " + e);
+                    Console.WriteLine(DateTime.Now.ToString() + ": Något gick fel med nyhetskollen. " + e);
                 }
 
                 await Task.Delay(Constants.NewsCheckDelayMs);
